@@ -655,6 +655,37 @@ Transform:
   - {fileID: 989661323}
   m_Father: {fileID: 1864068001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1403209820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403209821}
+  m_Layer: 0
+  m_Name: characters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403209821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403209820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1864068001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1811061019
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864068001}
   - component: {fileID: 1864068002}
+  - component: {fileID: 1864068003}
   m_Layer: 0
   m_Name: building
   m_TagString: Untagged
@@ -964,6 +996,7 @@ Transform:
   m_Children:
   - {fileID: 916628690}
   - {fileID: 1398797905}
+  - {fileID: 1403209821}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1864068002
@@ -980,6 +1013,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowPrefab: {fileID: 2832325695387137793, guid: 10dee9f76147a4b4fb8433f90aee0a66, type: 3}
   windowParent: {fileID: 1398797904}
+--- !u!114 &1864068003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864068000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f4a67a3bcf7e445a0eeb976d62a8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefab:
+  - {fileID: 4354455962492144220, guid: 54d28a2dbcb97554fb7e62ea2de74afa, type: 3}
+  - {fileID: 6859850836344410421, guid: c42b74752bb81da45944a043bffa1852, type: 3}
+  - {fileID: 9017826648012060616, guid: c3e181bb2bc6e014bb9adfc1dcd056dc, type: 3}
+  - {fileID: 4968025709083244126, guid: a9d1717beb83efe4e8a1f877563c76bf, type: 3}
+  - {fileID: 6960859060051078571, guid: 8dadcc4bd4382bf4285b0309233ac560, type: 3}
+  - {fileID: 6831314737163183123, guid: 6d8419c2506b3b946ae0da048f5ebe7e, type: 3}
+  - {fileID: 7608251338508539830, guid: 822635757b280884bbfe55f6d197c755, type: 3}
+  - {fileID: 7965978025524218686, guid: a787d9512625a9a409c4d514c815bee5, type: 3}
+  - {fileID: 8849195098835266172, guid: 16dacaaa7cc21cc4aa8ac94782c9cf12, type: 3}
+  - {fileID: 3876865630134822766, guid: 9ee7360c10c161a42882a322320aa729, type: 3}
+  - {fileID: 6168163181776876538, guid: 4f284712b7bbbf345a52f6a93441e466, type: 3}
+  characterParent: {fileID: 1403209820}
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
