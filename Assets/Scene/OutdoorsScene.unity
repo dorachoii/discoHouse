@@ -979,6 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowPrefab: {fileID: 2832325695387137793, guid: 10dee9f76147a4b4fb8433f90aee0a66, type: 3}
+  windowParent: {fileID: 1398797904}
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1

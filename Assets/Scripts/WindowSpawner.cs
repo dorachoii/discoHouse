@@ -3,6 +3,7 @@ using UnityEngine;
 public class WindowSpawner : MonoBehaviour
 {
     public GameObject windowPrefab;
+    public GameObject windowParent;
 
     private int windowCount = 4;
 
@@ -29,6 +30,7 @@ public class WindowSpawner : MonoBehaviour
             for (int j = 0; j < windowCount; j++)
             {
                 windows[i, j] = Instantiate(windowPrefab, new Vector3(xPos + i * xOffset, yPos - j * yOffset, zPos), Quaternion.identity);
+                windows[i, j].transform.SetParent(windowParent.transform, true);
             }
         }
     }
