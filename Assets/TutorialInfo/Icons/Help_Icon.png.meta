@@ -126,3 +126,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191779
+  packageName: The Realtime Rascals
+  packageVersion: 1.0.1
+  assetPath: Assets/TutorialInfo/Icons/Help_Icon.png
+  uploadId: 424853
